@@ -1,0 +1,97 @@
+.dashboard {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calendar {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calendar h2 {
+    margin-bottom: 10px;
+  }
+  
+  .habit-input {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .habit-input input {
+    padding: 10px;
+    border: 1px solid #007bff; /* Blue border */
+    border-radius: 5px;
+    margin-right: 10px;
+    flex-grow: 1; /* Allows the input to take full width */
+  }
+  
+  .habit-input button {
+    padding: 10px;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .habit-input button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(32, 1fr); /* 1 for habit name, 31 for days */
+    gap: 10px;
+  }
+  
+  .grid-header {
+    font-weight: bold;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .habit-name {
+    padding: 10px;
+    border-right: 1px solid #ddd;
+    background-color: #e9ecef; /* Light gray background for habit names */
+  }
+  
+  .checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .checkbox {
+    width: 24px; /* Slightly larger for better usability */
+    height: 24px; /* Slightly larger for better usability */
+    border: 1px solid #007bff; /* Blue border */
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative; /* Allows positioning of the tick */
+  }
+  
+  .checkbox.completed {
+    background-color: #e9ecef; /* Change to light gray when completed */
+    border-color: #007bff; /* Blue border */
+  }
+  
+  .tick {
+    color: #007bff; /* Color of the tick mark */
+    font-size: 18px; /* Size of the tick */
+    position: absolute;
+    left: 3px; /* Adjust as needed */
+    top: -2px; /* Adjust as needed */
+  }
+  
+  .checkbox:hover {
+    background-color: #cce5ff; /* Light blue hover effect */
+  }
+  
